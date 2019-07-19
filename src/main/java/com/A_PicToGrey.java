@@ -86,7 +86,7 @@ public class A_PicToGrey {
 
     public static void main(String[] args) throws IOException {
         String inputpath = "C:\\Users\\Administrator\\Desktop\\我的代码\\验证码素材\\";
-        String filename = "1 (1)";
+        String filename = "1";
         String suffix = ".jpg";
 
         String outPath = "C:\\Users\\Administrator\\Desktop\\我的代码\\验证码素材\\结果\\";

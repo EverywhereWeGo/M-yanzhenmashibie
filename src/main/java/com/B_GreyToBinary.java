@@ -41,7 +41,7 @@ public class B_GreyToBinary {
             double w0 = (double) countA / width / height;
             double w1 = (double) countB / width / height;
 
-            double u0 = (float) grayAs / countA;
+            double u0 = (double) grayAs / countA;
             double u1 = (double) grayBs / countB;
 
             double ICV = w0 * w1 * (u0 - u1) * (u0 - u1);
@@ -72,15 +72,13 @@ public class B_GreyToBinary {
 
     public static void main(String args[]) throws IOException {
         String inputpath = "C:\\Users\\Administrator\\Desktop\\我的代码\\验证码素材\\结果\\";
-        String filename = "1 (1)";
+        String filename = "1";
         String suffix = ".jpg";
 
         String outPath = "C:\\Users\\Administrator\\Desktop\\我的代码\\验证码素材\\结果\\";
 
-        binaryImage(inputpath+filename+"_gray"+suffix, outPath+filename+"_binary"+suffix);
+        binaryImage(inputpath + filename + "_gray" + suffix, outPath + filename + "_binary" + suffix);
     }
-
-
 
 
 }
