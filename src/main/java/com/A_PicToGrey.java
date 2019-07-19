@@ -58,7 +58,6 @@ public class A_PicToGrey {
         int height = image.getHeight();
 
         BufferedImage grayImage = new BufferedImage(width, height, image.getType());
-        //BufferedImage grayImage = new BufferedImage(width, height,  BufferedImage.TYPE_BYTE_GRAY);
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
                 int color = image.getRGB(i, j);
