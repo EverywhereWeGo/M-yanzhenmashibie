@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-import static com.PicUtil.colorToRGB;
+import static com.util.PicUtil.colorToRGB;
 
 public class A_PicToGrey {
 
@@ -74,7 +74,6 @@ public class A_PicToGrey {
                 } else if (status == 4) {
                     gray = (int) (0.3 * r + 0.59 * g + 0.11 * b);//加权法灰度化
                 }
-                System.out.println("像素坐标：" + " x=" + i + "   y=" + j + "   灰度值=" + gray);
                 grayImage.setRGB(i, j, colorToRGB(gray, gray, gray));
             }
         }
@@ -86,11 +85,11 @@ public class A_PicToGrey {
     public static void main(String[] args) throws IOException {
         String inputpath = "C:\\Users\\Administrator\\Desktop\\我的代码\\验证码素材\\";
         String filename = "1";
-        String suffix = ".jpg";
+        String suffix = ".png";
 
         String outPath = "C:\\Users\\Administrator\\Desktop\\我的代码\\验证码素材\\结果\\";
 
-        grayImage(4, inputpath + filename + suffix, outPath + filename + "_gray" + suffix);//加权法灰度化
+        grayImage(4, inputpath + filename + ".jpg", outPath + filename + "_gray" + suffix);//加权法灰度化
     }
 
 

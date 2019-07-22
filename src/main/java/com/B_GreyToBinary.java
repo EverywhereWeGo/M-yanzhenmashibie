@@ -5,8 +5,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-import static com.PicUtil.bufferedImageToPicture;
-import static com.PicUtil.colorToRGB;
+import static com.util.PicUtil.bufferedImageToPicture;
+import static com.util.PicUtil.colorToRGB;
 
 public class B_GreyToBinary {
     public static void binaryImage(String imagePath, String outPath) throws IOException {
@@ -73,7 +73,7 @@ public class B_GreyToBinary {
     public static void main(String args[]) throws IOException {
         String inputpath = "C:\\Users\\Administrator\\Desktop\\我的代码\\验证码素材\\结果\\";
         String filename = "1";
-        String suffix = ".jpg";
+        String suffix = ".png";
 
         String outPath = "C:\\Users\\Administrator\\Desktop\\我的代码\\验证码素材\\结果\\";
 
